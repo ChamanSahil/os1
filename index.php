@@ -8,8 +8,8 @@
     </head>
     <body>
         <?php
-            connect = mysqli_connect("localhost", "u195637119_vishalsproject", "ZGfgxEaPNJyx@9j", "u195637119_wheels4water");
-            print_r(connect);
+            $connect = mysqli_connect("localhost", "u195637119_vishalsproject", "ZGfgxEaPNJyx@9j", "u195637119_wheels4water");
+            print_r($connect);
 
             if(isset($_GET['india'])) echo "INDIA IS THERE";
             else if(!isset($_GET['india'])) echo "INDIA IS NOT HERE";
