@@ -15,7 +15,15 @@
             
             // Create a connection
             $connect = mysqli_connect($servername, $username, $password, $database);
-            print_r($connect);
+            // Check connection
+            if (!$connect) {
+                die("Connection failed: " . mysqli_connect_error());
+            } else {
+                echo "Connected to MySQL successfully";
+            }
+            
+            // Close the connection
+            mysqli_close($connect);
 
             if(isset($_GET['india'])) echo "INDIA IS THERE";
             else if(!isset($_GET['india'])) echo "INDIA IS NOT HERE";
