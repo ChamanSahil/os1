@@ -8,6 +8,9 @@
     </head>
     <body>
         <?php
+            #connect = mysqli_con/nect("localhost", "u195637119_vishalsproject", "ZGfgxEaPNJyx@9j", "u195637119_wheels4water");
+            print_r(mysqli_connect);
+
             if(isset($_GET['india'])) echo "INDIA IS THERE";
             else if(!isset($_GET['india'])) echo "INDIA IS NOT HERE";
             echo "<br>Watch the page reload itself in 5 seconds!";
