@@ -8,10 +8,10 @@
     </head>
     <body>
         <?php
-            $servername = "mysql-service";
-            $username = "myuser";
-            $password = "mypassword";
-            $database = "mydb";
+            $servername = "my-mysql";
+            $username = "u195637119_amdocs_project";
+            $password = "Vishal@2020";
+            $database = "u195637119_medibuddy";
             
             // Create a connection
             echo $username . ": " . $password;
