@@ -14,7 +14,7 @@
             $database = "mydb";
             
             // Create a connection
-            echo $severname . ": " . $username . ": " . $password;
+            echo $username . ": " . $password;
             $connect = mysqli_connect($servername, $username, $password, $database);
             // Check connection
             if (!$connect) {
