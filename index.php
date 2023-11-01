@@ -9,12 +9,10 @@
     <body>
         <?php
             $servername = "my-mysql";
-            $username = "u195637119_amdocs_project";
-            $password = "Vishal@2020";
-            $database = "u195637119_medibuddy";
+            $username = "u195637119_vishalsproject";
+            $password = "ZGfgxEaPNJyx@9j";
+            $database = "u195637119_wheels4water";
             
-            // Create a connection
-            echo $username . ": " . $password;
             $connect = mysqli_connect($servername, $username, $password, $database);
             // Check connection
             if (!$connect) {
