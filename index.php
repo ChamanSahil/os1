@@ -13,8 +13,7 @@
             $password = "ZGfgxEaPNJyx@9j";
             $database = "u195637119_wheels4water";
             
-            #$connect = mysqli_connect($servername, $username, $password, $database);
-            $connect = mysqli_connect($servername, "", "", "");
+            $connect = mysqli_connect($servername, $username, $password, $database);
             // Check connection
             if (!$connect) {
                 die("Connection failed: " . mysqli_connect_error());
