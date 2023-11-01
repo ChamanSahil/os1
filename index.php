@@ -8,7 +8,13 @@
     </head>
     <body>
         <?php
-            $connect = mysqli_connect("localhost", "u195637119_vishalsproject", "ZGfgxEaPNJyx@9j", "u195637119_wheels4water");
+            $servername = "mysql-service";
+            $username = "myuser";
+            $password = "mypassword";
+            $database = "mydb";
+            
+            // Create a connection
+            $connect = mysqli_connect($servername, $username, $password, $database);
             print_r($connect);
 
             if(isset($_GET['india'])) echo "INDIA IS THERE";
