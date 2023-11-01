@@ -20,7 +20,7 @@
             } else {
                 echo "Connected to MySQL successfully";
                 $result = mysqli_query($connect, "SELECT * FROM hosiptals") or die(mysqli_error($connect));
-                print_r(mysqli_fetch_array($result))
+                print_r(mysqli_fetch_array($result));
 
                 echo "<br>";
             }
