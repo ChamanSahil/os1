@@ -8,7 +8,7 @@
     </head>
     <body>
         <?php
-            $servername = "my-mysql";
+            $servername = "vatssql";
             $username = "vishal";
             $password = "test";
             $database = "testDB";
