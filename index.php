@@ -9,9 +9,9 @@
     <body>
         <?php
             $servername = "my-mysql";
-            $username = "u195637119_vishalsproject";
-            $password = "ZGfgxEaPNJyx@9j";
-            $database = "u195637119_wheels4water";
+            $username = "vishal";
+            $password = "test";
+            $database = "testDB";
             
             $connect = mysqli_connect($servername, $username, $password, $database);
             // Check connection
