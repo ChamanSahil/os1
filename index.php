@@ -18,8 +18,9 @@
             if (!$connect) {
                 die("Connection failed: " . mysqli_connect_error());
             } else {
-                echo "Connected to MySQL successfully";
+                echo "Connected to MySQL successfully<br>";
                 $result = mysqli_query($connect, "SELECT * FROM e_users") or die(mysqli_error($connect));
+                echo(mysqli_num_rows($result));
                 echo "<br>";
                 print_r(mysqli_fetch_array($result));
                 echo "<br>";
