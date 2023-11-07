@@ -8,10 +8,10 @@
     </head>
     <body>
         <?php
-            $servername = "project-sql";
-            $username = "vishal";
-            $password = "test";
-            $database = "testDB";
+            $servername = getenv('MYSQL_HOST');
+            $username = getenv('MYSQL_USER');
+            $password = getenv('MYSQL_PASSWORD');
+            $database = getenv('MYSQL_DATABASE');
             
             $connect = mysqli_connect($servername, $username, $password, $database);
             // Check connection
