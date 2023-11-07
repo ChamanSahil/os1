@@ -20,8 +20,8 @@
             } else {
                 echo "Connected to MySQL successfully";
                 $result = mysqli_query($connect, "SELECT * FROM e_users") or die(mysqli_error($connect));
+                echo "<br>";
                 print_r(mysqli_fetch_array($result));
-
                 echo "<br>";
             }
             
